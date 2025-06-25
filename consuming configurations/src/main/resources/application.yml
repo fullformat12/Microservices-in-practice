@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: sample03
+
+  config:
+    import: "optional:configserver:"
+
+  profiles:
+    active: dev  # 👈 Sẽ tìm file sample03-dev.properties nếu có
+
+  cloud:
+    config:
+      uri: http://localhost:9000  # 👈 Link đến Config Server
