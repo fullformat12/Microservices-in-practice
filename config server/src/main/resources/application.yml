@@ -8,3 +8,12 @@ spring:
         git:
           uri: https://github.com/fullformat12/config-repo-demo
           default-label: main
+  kafka:
+    bootstrap-servers: localhost:9092
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: busrefresh
+

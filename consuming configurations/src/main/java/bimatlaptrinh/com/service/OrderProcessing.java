@@ -4,6 +4,7 @@ import bimatlaptrinh.com.model.Item;
 import bimatlaptrinh.com.model.Order;
 import bimatlaptrinh.com.model.PaymentMethod;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/order")
+@RefreshScope
 public class OrderProcessing {
 	@Value("${database.connection}")
 	private String dbUrl;
