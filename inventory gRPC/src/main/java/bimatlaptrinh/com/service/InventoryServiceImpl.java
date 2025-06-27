@@ -1,6 +1,9 @@
 package bimatlaptrinh.com.service;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
+import proto.api.InventoryServiceGrpc;
+import proto.api.ItemList;
+import proto.api.UpdateItemsResp;
 
 @GrpcService
 public class InventoryServiceImpl extends InventoryServiceGrpc.InventoryServiceImplBase {

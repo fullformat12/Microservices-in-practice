@@ -3,6 +3,9 @@ package bimatlaptrinh.com.service;
 import bimatlaptrinh.com.model.Item;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Component;
+import proto.api.InventoryServiceGrpc;
+import proto.api.ItemList;
+import proto.api.UpdateItemsResp;
 
 import java.util.List;
 
@@ -15,7 +18,7 @@ public class InventoryClient {
     public void sendItems(List<Item> items) {
         ItemList.Builder builder = ItemList.newBuilder();
         items.forEach(i -> builder.addItem(
-                bimatlaptrinh.com.service.Item.newBuilder()
+                        proto.api.Item.newBuilder()
                         .setCode(i.getCode())
                         .setQty(i.getQty())
         ));
