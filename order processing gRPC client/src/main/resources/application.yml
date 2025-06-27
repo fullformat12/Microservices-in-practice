@@ -1,0 +1,5 @@
+grpc:
+  client:
+    inventory-service:
+      address: 'static://localhost:7000'
+      negotiationType: plaintext

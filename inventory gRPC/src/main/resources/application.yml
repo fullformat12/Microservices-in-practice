@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: "inventory gRPC"
+server:
+  port: 9000
+grpc:
+  server:
+    port: 7000
