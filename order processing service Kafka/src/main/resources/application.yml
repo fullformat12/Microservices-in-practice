@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: order-service
+  cloud:
+    stream:
+      bindings:
+        order-out-0:
+          destination: ORDER_PROCESSING_COMPLETED
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: localhost:9092
