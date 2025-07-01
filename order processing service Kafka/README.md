@@ -18,4 +18,4 @@
 ```
 
 * Bài viết chi tiết:
-  https://bimatlaptrinh.com/gioi-thieu-microservices/
+  https://bimatlaptrinh.com/xay-dung-microservices-huong-su-kien-voi-kafka/
